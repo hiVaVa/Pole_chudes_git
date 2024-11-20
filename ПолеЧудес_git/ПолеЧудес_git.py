@@ -29,7 +29,7 @@ def join(iterable, separator):
 
 while running == True:
     running_1=True
-    print('')
+    print('тут была Таня')
     print('#####  МЕНЮ  #####')
     print('1. Отгадать новое слово')
     print('2. Счет')
