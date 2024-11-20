@@ -4,7 +4,7 @@ running=True
 running_1=True
 running_2=True
 running_3=True
-#score_points=0
+score_points=0
 s=''
 #что-то вроде рандомайзера
 r=1
@@ -69,8 +69,8 @@ while running == True:
                      if letter == word_to_guess:
                          print(word_to_guess)
                          print("Ура! победа!")
-                         #print("+ 4 балла\n")
-                         #score_points += 4
+                         print("+ 4 балла\n")
+                         score_points += 4
                          running_1 = False
                          break
                      else:
@@ -90,13 +90,13 @@ while running == True:
                          for i in range(len(word_to_guess)):
                              if letter == word_to_guess[i]:
                                  guessed_word[i]=letter
-                                 #score_points+=1
+                                 score_points+=1
                          print(join(guessed_word,s),'\n')
 
                      else:
                          print("Этой буквы нет в загаданном слове.\n")
-    # if option == 2:
-    #     print("Ваш счёт:", score_points)
+    if option == 2:
+        print("Ваш счёт:", score_points)
 
     if option == 3:
         print("До новых встреч!")
